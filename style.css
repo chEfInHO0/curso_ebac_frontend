@@ -1,0 +1,153 @@
+/* Reset */
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/* Posicionamento de Elementos */
+header li{
+    display: inline;
+    margin-left: 10px;
+}
+
+header .container { 
+    display: flex;
+    justify-content: space-between;
+}
+
+.container{
+    width: 1366px;
+    margin: 0 auto;
+}
+
+.articles{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.articles article {
+    width: 30%;
+    margin: 15px 0px;
+}
+
+.articles article img {
+    width: 100%;
+}
+
+#economy article,
+#tech article,
+#fun article {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Estilização de Elementos */
+
+body > header{
+    background-color: #2f372f;
+    padding: 15px;
+}
+
+h1{
+    font-size: 42px;
+}
+
+h2{
+    font-size: 36px;
+}
+
+h3{
+    font-size: 26px;
+}
+
+a{
+    width: 80px;
+    background-color: blue;
+    display: inline-block;
+    border-radius: 5px;
+    color: #fff;
+    transition: 0.1s linear;
+    padding: 10px;
+}
+
+a:hover{
+    background-color: lightblue;
+    color: #000;
+}
+
+body > header a {
+    text-decoration: none;
+    text-align: center;
+}
+
+.articles article p{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 10px 0px;
+}
+#sports a{
+    background-color: lightgreen;
+    color: #000;
+}
+
+#sports a:hover{
+    background-color: rgb(75, 126, 75);
+    color: #000;
+    cursor: pointer;
+    
+}
+
+#sports{
+    background-color: rgba(0, 255, 0, 0.1);
+}
+
+#economy a{
+    background-color: rgba(255, 255, 0, 0.4);
+    color: #000;
+}
+
+#economy a:hover{
+    background-color: rgba(190, 190, 74, 0.8);
+    color: #000;
+    cursor: pointer;
+    
+}
+
+#economy{
+    background-color: rgba(255, 255, 0, 0.2);
+}
+
+#tech a{
+    background-color: rgb(255, 185, 158);
+    color: #000;
+}
+
+#tech a:hover{
+    background-color:orange;
+    color: #000;
+    cursor: pointer;
+    
+}
+
+#tech{
+    background-color: rgba(255, 166, 0, 0.281);
+}
+
+#fun a{
+    background-color: rgb(194, 44, 194,0.4);
+    color: #fff;
+}
+
+#fun a:hover{
+    background-color:rgb(109, 15, 109,0.5);
+    color: #fff;
+    cursor: pointer;
+    
+}
+
+#fun{
+    background-color: rgb(141, 75, 141,0.5);
+}
