@@ -1,0 +1,156 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Bungee, Roboto;
+    font-size: 22px;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+header{
+    padding: 16px 0;
+    background-color: #182C61;
+    color: #ecf0f1;
+    display: flex;
+    justify-content: center;
+    height: 120px;
+}
+
+footer{
+    padding: 16px 0;
+    background-color: #182C61;
+    color: #ecf0f1;
+    display: flex;
+    justify-content: center;
+    height: 90px; 
+}
+
+footer p{
+    display: flex;
+    font-size: 16px;
+    width: 100%;
+    font-family: Roboto;
+    align-items: center;
+}
+
+header .container{
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav li {
+    display: inline;
+    border-radius: 10px;
+    margin-left: 16px;
+    font-size: 22px;
+}
+
+header nav li a {
+    color: #ecf0f1;
+    text-decoration: none;
+    padding: 10px;
+    
+}
+
+.container{
+    max-width: 1280px;
+    width: 100%;
+    display: flex;
+}
+
+#contact{
+    display: flex;
+    justify-content: center;
+    
+}
+
+#contact .container{
+    flex-wrap: wrap;
+}
+
+#contact .container h2{
+    width: 100%;
+}
+
+#contact article{
+    width: 31%;
+}
+
+#contact article form input,
+#contact article form textarea{
+    width: 100%;
+    margin: 10px 0;
+    font-size: 18px;
+    font-family: Roboto;
+}
+#contact article form input{
+    padding: 8px;
+}
+#about{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 25px;
+}
+
+article{
+    margin-left: 16px;
+    padding: 16px;
+    height: 100%;
+}
+
+article p{
+    font-size: 16px;
+    font-family: Roboto;
+    margin-top: 9px;
+    margin-bottom: 9px;
+    color: #182C61;
+}
+
+article img{
+    height: 24px;
+    margin-right: 16px;
+}
+
+article li {
+    list-style-type: none;
+    display: inline-block;
+    
+}
+
+
+h1{
+    font-size: 36px;
+}
+
+h2{
+    margin: 0 0 16px;
+    font-size: 24px;
+    color: #182C61;
+}
+
+h3{
+    margin: 0 0 16px;
+    font-size: 18px;
+    color: #182C61;
+}
+
+.btn{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    height: 70px;
+    color: #ecf0f1;
+    background-color: #182C61;
+}
+
+#follow{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    text-align: center;
+}

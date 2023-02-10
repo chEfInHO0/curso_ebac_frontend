@@ -1,0 +1,201 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+header,
+section h2,
+section h3,
+form button{
+    font-family: 'Bungee', cursive;
+    font-weight: normal;
+}
+
+body, input, textarea{
+    font-family: 'Roboto', sans-serif;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    background-color: #182C61;
+    color: #ecf0f1;
+    padding: 16px 0;
+}
+
+section h2{
+    margin: 16px;
+}
+
+section{
+    color: #182C61;
+}
+
+header li {
+    display: inline;
+    margin:10px;
+    
+}
+
+header li a{
+    text-decoration: none;
+    color: #ecf0f1;
+}
+
+.container{
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header .container,
+section .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.brand-list li img
+{
+    height: 24px;
+}
+
+.brand-list li
+{
+    display: inline;
+}
+
+section .container{
+    align-items: flex-start;
+}
+
+section{
+    padding: 24px;
+}
+
+section p{
+    margin:8px;
+}
+
+#about img {
+    margin: 0 16px;
+}
+
+#contact .container {
+    display: block;
+}
+
+form input,
+form textarea,
+form button{
+    display: block;
+    width: 320px;
+    margin-bottom: 8px;
+    padding: 8px;
+}
+
+.contact-methods{
+    display: flex;
+    justify-content: space-between;
+}
+
+.social-links img {
+    height: 24px;
+}
+
+.social-links li {
+    display: inline;
+    margin-right: 10px;
+}
+
+form textarea{
+    resize: none;
+}
+
+section h3 {
+    margin-bottom: 16px;
+}
+
+form button{
+    background-color: #182C61;
+    color: #ecf0f1;
+    border: none;
+    transition: 0.4s linear;
+}
+
+form button:hover{
+    background-color: #3653a3;
+    cursor: pointer;
+}
+
+input:focus,
+textarea:focus{
+    outline-color: #182C61;
+}
+
+footer{
+    background-color: #182C61;
+    color: #ecf0f1;
+    padding: 16px 0;
+}
+
+.bt{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #3653a3;
+    border: 1px solid #ecf0f1;
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    transition: 0.1s linear;
+}
+
+.show{
+    opacity: 1;
+    cursor: pointer;
+}
+
+.hide{
+    opacity: 0;
+    background-color: transparent;
+}
+
+/*Debugger class*/
+
+.tester{
+    border: 3px solid black;
+}
+
+
+@media only screen and (max-width: 600px) {
+    body{
+        font-size: 12px;
+    }
+    header h1,
+    footer p{
+        margin-left: 10px;
+    }
+    #about .container{
+        display: block;
+    }
+    #contact .contact-methods {
+        display: block;
+    }
+    .contact-methods div {
+        margin-bottom: 22px;
+    }
+    .store-img{
+        width: 95%;
+    }
+    .bt{
+        width: 30px;
+        height: 30px;
+    }
+  }
