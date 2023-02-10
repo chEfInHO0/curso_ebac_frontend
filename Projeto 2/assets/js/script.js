@@ -10,16 +10,16 @@ const raceArray = ['Altmer',
     'Redguard']
 
 const imgRaceArray = [
-    './High_Elf_Female.jpg',
-    './Argonian_Male.jpg',
-    './Wood_Elf_Male.jpg',
-    './Breton_Male.jpg',
-    './Dark_Elf_Female.jpg',
-    './Imperial_Female.jpg',
-    './Concept_Khajiit_Male.jpg',
-    './Nord_Male_3.jpg',
-    './Orc_Male.jpg',
-    './Redguard_Female.jpg'
+    './assets/img/High_Elf_Female.jpg',
+    './assets/img/Argonian_Male.jpg',
+    './assets/img/Wood_Elf_Male.jpg',
+    './assets/img/Breton_Male.jpg',
+    './assets/img/Dark_Elf_Female.jpg',
+    './assets/img/Imperial_Female.jpg',
+    './assets/img/Concept_Khajiit_Male.jpg',
+    './assets/img/Nord_Male_3.jpg',
+    './assets/img/Orc_Male.jpg',
+    './assets/img/Redguard_Female.jpg'
 
 ]
 
@@ -47,8 +47,8 @@ function cycleImg(){
 }
 
 setInterval(() => {
-    card.classList.remove('animate')
-    void card.offsetWidth;
-    card.classList.add('animate')
+    //card.classList.remove('animate')
+    //void card.offsetWidth;
+    //card.classList.add('animate')
     cycleImg()
-},6000)
+},4000)
