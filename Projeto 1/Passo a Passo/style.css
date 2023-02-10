@@ -172,3 +172,30 @@ footer{
 .tester{
     border: 3px solid black;
 }
+
+
+@media only screen and (max-width: 600px) {
+    body{
+        font-size: 12px;
+    }
+    header h1,
+    footer p{
+        margin-left: 10px;
+    }
+    #about .container{
+        display: block;
+    }
+    #contact .contact-methods {
+        display: block;
+    }
+    .contact-methods div {
+        margin-bottom: 22px;
+    }
+    .store-img{
+        width: 95%;
+    }
+    .bt{
+        width: 30px;
+        height: 30px;
+    }
+  }
