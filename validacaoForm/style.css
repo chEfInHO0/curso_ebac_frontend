@@ -1,0 +1,63 @@
+/* Reset */
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* Posicionamento de Elementos */
+
+.container{
+    max-width: 640px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.container h1,
+.container h2{
+    font-weight: normal;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 45px 0;
+}
+
+h1{
+    font-size: 50px;
+}
+h2{
+    font-size: 40px;
+}
+
+.customForm{
+    display: flex;
+    flex-direction: column;
+}
+.customForm input{
+    padding: 22px;
+    font-size: 18px;
+    margin: 15px 0;
+}
+
+#status-message{
+    padding: 20px;
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+    display: none;
+}
+
+.success{
+    background-color: rgb(132, 201, 132);
+}
+
+.error{
+    background-color: rgb(219, 107, 107);
+}
+
+.alert{
+    background-color: rgb(247, 247, 161);
+}

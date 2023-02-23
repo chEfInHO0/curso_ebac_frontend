@@ -32,11 +32,8 @@ imgDesc.innerHTML = raceArray[0]
 
 function cycleImg(){
     let imgName = img.getAttribute('src')
-    console.log(imgName)
     if(imgRaceArray.indexOf(String(imgName)) < 9){
-        console.log(imgRaceArray.indexOf(imgName))
         let next = imgRaceArray.indexOf(imgName) + 1
-        console.log(next)
         img.setAttribute('src', imgRaceArray[next])
         imgDesc.innerHTML = raceArray[next]
     }else{
@@ -51,4 +48,4 @@ setInterval(() => {
     //void card.offsetWidth;
     //card.classList.add('animate')
     cycleImg()
-},4000)
+},4000)  
