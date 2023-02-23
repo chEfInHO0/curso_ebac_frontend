@@ -53,7 +53,7 @@ function setMinGrade() {
             alert('O valor deve ser menor que 10')
             setMinGrade() 
         }else{
-            return grade
+            minGrade = grade
     }
 }
 
@@ -93,5 +93,5 @@ restart.addEventListener('click', () => {
     reset()
 })
 
-minGrade = setMinGrade()
+setMinGrade()
 isApproved()
