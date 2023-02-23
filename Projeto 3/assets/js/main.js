@@ -46,9 +46,15 @@ function setMinGrade() {
         if(!/[^a-zA-z]/.test(grade)){
             alert('O valor deve ser numérico')
             setMinGrade()
+        }else if(+grade < 0){
+            alert('O valor deve ser maior que 0')
+            setMinGrade() 
+        }else if(+grade > 10){
+            alert('O valor deve ser menor que 10')
+            setMinGrade() 
         }else{
             return grade
-        }
+    }
 }
 
 function reset() {
