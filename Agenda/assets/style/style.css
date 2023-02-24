@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Text related style*/
+
+header h1{
+    font-weight: bold;
+    font-size: 42px;
+}
+
+table th{
+    font-weight: bold;
+    font-size: 24px;
+}
+
+table td{
+    font-size: 18px;
+    text-align: center;
+}
+
+input[type=submit]{
+    font-weight: bold;
+    color: #520e23;
+}
+
+/* Text related style*/
+
+body{
+    padding-top: 10%;
+    background-color: #ff9065;
+    color: #520e23;
+}
+
+header{
+    display: flex;
+    align-items: center;
+}
+
+.logo{
+    height: 150px;
+}
+
+.container{
+    max-width: 960px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+form{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    width: 640px;
+    width: 100%;
+}
+
+input{
+    padding: 10px;
+    margin-right: 6px;
+    border: none;
+    border-bottom: 2px solid #520e23;
+    outline-color: #ff9065;
+}
+
+table{
+    width: 100%;
+}
+
+table th{
+    border-bottom: 2px solid #520e23;
+    padding: 5px;
+}
+
+table td{
+    padding: 15px;
+}
+
+input[type=submit]{
+    background-color:#d04e68;
+    text-align: center;
+}
+
+@media only screen and (max-width:600px){
+
+    header{
+        justify-content: center;
+    }
+
+    form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    form input{
+        width: 80%;
+        margin-bottom: 10px;
+    }
+}
