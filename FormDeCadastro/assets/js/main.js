@@ -88,6 +88,9 @@ $(document).ready(() => {
                 endereco: {
                     required: true
                 },
+                num:{
+                    required:true
+                },
                 cep: {
                     required: true
                 }
@@ -98,6 +101,7 @@ $(document).ready(() => {
                 telefone: 'Por favor, insira seu Celular',
                 cpf: 'Insira seu CPF',
                 endereco: 'Insira seu Endereço',
+                num: 'Insira o numero da casa',
                 cep: 'Insira seu CEP'
             },
             submitHandler: (async function (form) {
@@ -105,7 +109,7 @@ $(document).ready(() => {
                 if (isFullName()) {
                     if (valid) {
                         if (isCPFValid()) {
-                            alert('Cadastro oncluido com Sucesso')
+                            alert('Cadastro concluido com Sucesso')
                             form.submit()
                         } else {
                             alert('CPF INVALIDO')
