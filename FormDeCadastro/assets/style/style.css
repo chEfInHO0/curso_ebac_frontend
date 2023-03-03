@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto','sans-serif';
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.container-master{
+    max-width: 1600px;
+    width: 100%;
+    margin: 0 auto;
+    background-color: #c7c7c7;
+    display: flex;
+    justify-content: center;
+    min-height: 100%;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container{
+    max-width: 960px;
+    width: 100%;
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+}
+
+form{
+    width: 100%;
+    padding-top: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+form input{
+    margin-bottom: 10px;
+    width: 75%;
+    border: none;
+    border-bottom: 2px solid ;
+    padding: 10px;
+    font-size: 22px;
+    outline: none;
+}
+
+form button{
+    width: 200px;
+    padding: 10px;
+    font-size: 22px;
+    border: none;
+    background-color: #7e7e7e;
+    border-bottom: 2px solid;
+    cursor: pointer;
+    margin-bottom: 30px;
+}
+
+#consultas{
+    width: 100%;
+    font-size: 22px;
+    padding: 16px;
+    text-align: center;
+}
+
+#consultas th {
+    text-transform: uppercase;
+    border-bottom: 2px solid rgba(0,0,0,0.4);
+}
+
+#consultas td{
+    width: 300px;
+}
+
+#consultas th:nth-child(6),
+#consultas td:nth-child(6){
+    border-left: 2px solid rgba(0,0,0,0.4) ;
+}
+
+#consultas th,
+#consultas td{
+    border-right: 2px solid rgba(0,0,0,0.4) ;
+}
+
+#consultas th:nth-child(5),
+#consultas td:nth-child(5){
+    border-right: none;
+}
+
+#consultas th:nth-child(6),
+#consultas td:nth-child(6){
+    border-right: none;
+    border-left: 2px solid rgba(0,0,0,0.4) ;
+}
+
+label.error{
+    color: red;
+    font-weight: bold;
+    font-size: 22px;
+    padding: 8px;
+    
+}

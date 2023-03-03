@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Cadastro</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/style/style.css">
+</head>
+
+<body>
+    <div class="container-master">
+        <div class="container">
+            <header>
+                <h1>Formulário de Cadastro:</h1>
+
+            </header>
+            <form>
+                <input type="text" name="nome" id="nome" placeholder="Digite seu Nome Completo" minlength="3" maxlength="256">
+                <input type="email" name="email" id="email" placeholder="Digite seu E-mail">
+                <input type="tel" name="telefone" id="telefone" maxlength="10" minlength="9">
+                <input type="text" name="cpf" id="cpf" minlength="11" maxlength="11">
+                <input type="text" id="endereco" name="endereco" placeholder="Digite seu endereço">
+                <input id="zip" name="cep" type="text" minlength="9" maxlength="9">
+                <button type="submit">Consultar</button>
+            </form>
+        </div>
+        
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="./assets/js/jquery.mask.min.js"></script>
+    <script src="./assets/js/jquery.validate.min.js"></script>
+    <script src="./assets/js/main.js"></script>
+</body>
+
+</html>
