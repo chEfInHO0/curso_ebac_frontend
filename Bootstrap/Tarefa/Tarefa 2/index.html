@@ -16,7 +16,7 @@
         <header class="p-1">
             <div class="navbar navbar-expand-lg">
                 <h1>GetAMovie</h1>
-                <button type="button" data-bs-toggle="collapse" data-bs-target="##my-navbar"
+                <button type="button" data-bs-toggle="collapse" data-bs-target="#my-navbar"
                     class="navbar-toggler"><span class="navbar-toggler-icon"></span></button>
                 <nav class="collapse navbar-collapse justify-content-end" id="my-navbar">
                     <ul class="nav navbar-nav nav-pills">
@@ -564,27 +564,8 @@
                 </div>
             </div>
         </footer>
-        <div class="toast-container position-fixed bottom-0 end-0 p-3">
-            <div class="toast" id="custom-toast-1">
-                <div class="toast-header justify-content-between">Ocorreu um erro <span class="btn-close"
-                        data-bs-dismiss="toast"></span></div>
-                <div class="toast-body">É necessário informar um nome válido</div>
-            </div>
-            <div class="toast" id="custom-toast-2">
-                <div class="toast-header justify-content-between">Ocorreu um erro <span class="btn-close"
-                        data-bs-dismiss="toast"></span></div>
-                <div class="toast-body">É necessário informar um e-mail válido</div>
-            </div>
-            <div class="toast" id="custom-toast-3">
-                <div class="toast-header justify-content-between">Ocorreu um erro <span class="btn-close"
-                        data-bs-dismiss="toast"></span></div>
-                <div class="toast-body">É necessário informar um título válido</div>
-            </div>
-            <div class="toast" id="custom-toast-4">
-                <div class="toast-header justify-content-between">Ocorreu um erro <span class="btn-close"
-                        data-bs-dismiss="toast"></span></div>
-                <div class="toast-body">É necessário informar uma descrição válida</div>
-            </div>
+        <div id="toaster" class="toast-container position-fixed bottom-0 end-0 p-3">
+            
         </div>
     </div>
     <script src="./assets/lib/bootstrap.bundle.min.js"></script>

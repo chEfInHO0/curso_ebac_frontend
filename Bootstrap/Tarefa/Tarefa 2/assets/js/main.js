@@ -1,16 +1,59 @@
-function raiseToast(btn,id){
-    btn.click(function (){
-        const toast = new bootstrap.Toast(id)
-        toast.show()
-        dropToast(id)
-    })
+const errorCode = {
+    nome: '#custom-toast-1',
+    email: '#custom-toast-2',
+    fsa: '#custom-toast-3',
+    desc: '#custom-toast-4'
 }
 
-function dropToast(id){
+const toaster = document.querySelector('#toaster')
+
+function raiseToast(id) {
+    const toast = new bootstrap.Toast(id)
+    toast.show()
+}
+
+function resetToasts(){
     setTimeout(() => {
-        const toast = new bootstrap.Toast(id)
-        toast.dispose()
-    }, 2000);
+        $(toaster).html('')
+    }, 6000);
+}
+
+function setErrorMessage(msg){
+    return `
+            <div class="toast" id="failed-toast">
+                <div class="toast-header justify-content-between">Ocorreu um erro<span class="btn-close"
+                        data-bs-dismiss="toast"></span></div>
+                <div class="toast-body">
+                    ${msg}
+                </div>
+            </div>
+    `
+}
+
+function setSuccessMessage(msg){
+    return `
+            <div class="toast" id="success-toast">
+                <div class="toast-header justify-content-between">Obrigado por entrar em contato<span class="btn-close"
+                        data-bs-dismiss="toast"></span></div>
+                <div class="toast-body">
+                    ${msg}
+                </div>
+            </div>
+    `
+}
+
+function setErrorToast(msg) {
+    let t = setErrorMessage(msg)
+    $(t).appendTo(toaster)
+    raiseToast(`#failed-toast`)
+    resetToasts()
+}
+
+function setSuccessToast(msg) {
+    let t = setSuccessMessage(msg)
+    $(t).appendTo(toaster)
+    raiseToast(`#success-toast`)
+    resetToasts()
 }
 
 $(document).ready(() => {
@@ -32,40 +75,37 @@ $(document).ready(() => {
                 }
             },
             messages: {
-                nome: ``,
-                email: ``,
-                fsa: ``,
-                desc: ``
+                nome: '',//setErrorToast(1,'O nome passado é inválido'),
+                email: '',//setErrorToast(2,'O e-mail passado é inválido'),
+                fsa: '',//setErrorToast(3,'O titulo passado é inválido'),
+                desc:'' //setErrorToast(4,'A descrição passada é inválida')
 
             },
             submitHandler: (function (form) {
-                console.log((($('#nome').val()).split(' ')).length < 2)
-                if ((($('#nome').val()).split(' ')).length < 2) {
-                    const invalidName = 'Use pelo menos 1 sobrenome'
-                    $('form button').click(function () {
-                        alert('SUBMIT')
-                    })
+                if (($('#nome').val()).split().length < 2) {
+                    setErrorToast(`Os seguintes campos necessitam de correção: \n <strong>insira um sobrenome no campo do nome</strong>`)
                 } else {
-                    form.submit()
+                    alert('CLEAN')
                 }
+
             }),
             invalidHandler: (function (e, validate) {
-                let errorCode = {
-                    nome: '#custom-toast-1',
-                    email: '#custom-toast-2',
-                    fsa: '#custom-toast-3',
-                    desc:'#custom-toast-4'
-                }
                 e.preventDefault()
-                console.log(validate.numberOfInvalids())
-                console.log(validate)
-                console.log(validate.errorList)
-                console.log(validate.currentElements)
-                for (let c=0;c<validate.errorList.length;c++){
-                    let field = validate.errorList[c].element.name
-                    console.log(field)
-                    raiseToast($('form input[type=submit]'),`${errorCode[field]}`)
-                }
+                let errors = validate.errorList
+                let er = ''
+                errors.forEach(err => {
+                    if (err.element.name == 'nome'){
+                        er += 'Nome, '
+                    }else if (err.element.name == 'email'){
+                        er += 'E-mail, '
+                    }else if (err.element.name == 'fsa'){
+                        er += 'Título, '
+                    }else if (err.element.name == 'desc'){
+                        er += 'Descrição'
+                    }
+                    
+                });
+                setErrorToast(`Os seguintes campos necessitam de correção: \n <strong> ${er} </strong>`) 
             })
         })
     })
