@@ -1,0 +1,183 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto','sans-serif';
+}
+
+html{
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+header, footer{
+    background-color: #192a56;
+    color: #fff;
+    padding-top: 16px;
+}
+
+header > .container,
+footer > .container{
+    padding-bottom: 16px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header{
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.container-flex{
+    display: flex;
+}
+
+nav{
+    background-color: #575fcf;
+    padding: 16px;
+    font-size: 18px;
+    font-weight: bold;
+    display: none;
+}
+
+nav li{
+    display: inline;
+    list-style-type: none;
+    margin-left: 16px;
+    
+}
+
+nav li a{
+    color: #fff;
+    text-transform: capitalize;
+    text-decoration: none;
+    
+}
+
+.container{
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+    
+}
+
+.menu-hamburger{
+    width: 32px;
+    cursor: pointer;
+}
+
+.menu-hamburger span{
+    height: 2px;
+    width: 100%;
+    background-color: #fff;
+    display: block;
+    margin-bottom: 5px;
+}
+
+#about img{
+    max-width: 400px;
+    margin-right: 24px;
+}
+
+section{
+    padding: 48px 0;
+}
+
+#about,
+#highlighted,
+#promo{
+    padding-top: 160px;
+}
+
+#contact{
+    padding-top: 70px;
+    padding-bottom: 120px;
+}
+section h2{
+    margin-bottom: 16px;
+}
+
+.lista-veiculos{
+    list-style: none;
+    flex-wrap: wrap;
+}
+
+.lista-veiculos li{
+    max-width: 30%;
+    margin-bottom: 24px;
+}
+
+.lista-veiculos img{
+    max-width: 100%;
+}
+
+.price{
+    margin: 16px 0;
+    display: block;
+}
+
+.lista-veiculos li button{
+    display: block;
+    font-weight: bold;
+    font-style: italic;
+    width: 100%;
+    margin-bottom: 5px;
+    padding: 8px;
+    background-color: #119759;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+.item-central {
+    margin: 0 5%;
+}
+
+li del{
+    color: #ccc;
+    margin-right: 6px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+}
+
+form input,
+form textarea,
+form button{
+    width: 75%;
+    margin-bottom: 10px;
+    padding: 8px;
+    font-size: 18px;
+    outline: #fff;
+}
+
+form textarea{
+    resize: none;
+}
+
+form button{
+    background-color: #192a56;
+    color: #fff;
+    border: none;
+    font-size: 18px;
+    text-transform: capitalize;
+    font-style: italic;
+}
+
+button{
+    border-radius: 5px;
+}
+
+.social-links li{
+    list-style-type: none;
+    display: inline;
+    margin-right: 16px;
+}
+
+.social-links img{
+    max-width: 32px;
+}
