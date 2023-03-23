@@ -13,11 +13,11 @@
 
 <body>
     <div class="container-fluid g-0">
-        <header class="p-1">
+        <header class="p-1" id="menu-header">
             <div class="navbar navbar-expand-lg">
                 <h1>GetAMovie</h1>
-                <button type="button" data-bs-toggle="collapse" data-bs-target="#my-navbar"
-                    class="navbar-toggler"><span class="navbar-toggler-icon"></span></button>
+                <button type="button" data-bs-toggle="collapse" data-bs-target="#my-navbar" class="navbar-toggler"><span
+                        class="navbar-toggler-icon"></span></button>
                 <nav class="collapse navbar-collapse justify-content-end" id="my-navbar">
                     <ul class="nav navbar-nav nav-pills">
                         <li class="nav-item "><a href="#sec1" class="nav-link active">Filmes</a></li>
@@ -292,23 +292,25 @@
                 <div class="row g-0">
                     <div class="col">
                         <h4>Gostaria de adicionar algo a nossa lista? Entre em contato conosco</h4>
+                        <div class="row g-0">
+                            <div class="col-sm mt-2 col-md-8 col-lg-6 ">
+                                <form class="form-control">
+                                    <label for="nome" class="form-label mt-2 mb-2">Nome</label>
+                                    <input id="nome" name="nome" class="form-control shadow-none" type="text">
+                                    <br><label for="email" class="form-label mt-2 mb-2">E-mail</label>
+                                    <input id="email" name="email" class="form-control shadow-none" type="email">
+                                    <br><label for="fsa" class="form-label mt-2 mb-2">Filme/Serie/Anime</label>
+                                    <input id="fsa" name="fsa" class="form-control shadow-none" type="text">
+                                    <br><label for="desc" class="form-label mt-2 mb-2">Descrição</label>
+                                    <textarea id="desc" name="desc" class="form-control shadow-none"
+                                        type="text"></textarea>
+                                    <br><input type="submit" value="Enviar" class="btn btn-primary mt-4">
+                                </form>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="row g-0">
-                    <div class="col-sm mt-2 col-md-8 col-lg-6 ">
-                        <form class="form-control">
-                            <label for="nome" class="form-label mt-2 mb-2">Nome</label>
-                            <input id="nome" name="nome" class="form-control shadow-none" type="text">
-                            <br><label for="email" class="form-label mt-2 mb-2">E-mail</label>
-                            <input id="email" name="email" class="form-control shadow-none" type="email">
-                            <br><label for="fsa" class="form-label mt-2 mb-2">Filme/Serie/Anime</label>
-                            <input id="fsa" name="fsa" class="form-control shadow-none" type="text">
-                            <br><label for="desc" class="form-label mt-2 mb-2">Descrição</label>
-                            <textarea id="desc" name="desc" class="form-control shadow-none" type="text"></textarea>
-                            <br><input type="submit" value="Enviar" class="btn btn-primary mt-4">
-                        </form>
-                    </div>
-                </div>
+
             </section>
         </div>
         <div class="modal" id="filme-post-1">
@@ -390,7 +392,9 @@
                     </div>
                     <div class="modal-footer">
                         <a target="_blank" class="btn btn-hbo"
-                            href="https://play.hbomax.com/page/urn:hbo:page:spotlight-the-last-of-us"></a>
+                            href="https://play.hbomax.com/page/urn:hbo:page:spotlight-the-last-of-us">
+                            HBO Max
+                        </a>
                     </div>
                 </div>
             </div>
@@ -565,14 +569,10 @@
             </div>
         </footer>
         <div id="toaster" class="toast-container position-fixed bottom-0 end-0 p-3">
-            
+
         </div>
     </div>
-    <script src="./assets/lib/bootstrap.bundle.min.js"></script>
-    <script src="./assets/js/jquery-3.6.3.min.js"></script>
-    <script src="./assets/js/jquery.mask.min.js"></script>
-    <script src="./assets/js/jquery.validate.min.js"></script>
-    <script src="./assets/js/main.js"></script>
+    
 </body>
 
 </html>
