@@ -18,7 +18,7 @@ $(document).ready(function () {
             $('.navbar-toggler').click()
         }
     })
-
+    
     photo.click(function () {
         description = photo.data('value')
         scrollToForm()
@@ -91,4 +91,11 @@ $(document).ready(function () {
         }
 
     })
+    setInterval(() => {
+        if ($('#tel').val().split('').length == 15) {
+            $('#tel').mask('(00) 00000-0000')
+        } else {
+            $('#tel').mask('(00) 0000-00009')
+        }
+    }, 300)
 })
