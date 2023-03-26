@@ -2,6 +2,10 @@ body{
     background-color: #1a1616;
 }
 
+html{
+    scroll-behavior: unset !important;
+}
+
 h2,.card-footer{
     color: #fff;
     border-bottom: 2px solid rgba(255, 255, 255, 0.2);

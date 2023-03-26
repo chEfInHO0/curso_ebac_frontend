@@ -5,8 +5,6 @@ const errorCode = {
     desc: '#custom-toast-4'
 }
 
-let nav = document.querySelector('#nav-toggle')
-
 const toaster = document.querySelector('#toaster')
 
 function raiseToast(id) {
@@ -14,13 +12,13 @@ function raiseToast(id) {
     toast.show()
 }
 
-function resetToasts() {
+function resetToasts(){
     setTimeout(() => {
         $(toaster).html('')
     }, 6000);
 }
 
-function setErrorMessage(msg) {
+function setErrorMessage(msg){
     return `
             <div class="toast" id="failed-toast">
                 <div class="toast-header justify-content-between">Ocorreu um erro<span class="btn-close"
@@ -32,7 +30,7 @@ function setErrorMessage(msg) {
     `
 }
 
-function setSuccessMessage(msg) {
+function setSuccessMessage(msg){
     return `
             <div class="toast" id="success-toast">
                 <div class="toast-header justify-content-between">Obrigado por entrar em contato<span class="btn-close"
@@ -59,7 +57,6 @@ function setSuccessToast(msg) {
 }
 
 $(document).ready(() => {
-    
     $('form').on('submit', function (e) {
         e.preventDefault()
         $('form').validate({
@@ -81,7 +78,7 @@ $(document).ready(() => {
                 nome: '',//setErrorToast(1,'O nome passado é inválido'),
                 email: '',//setErrorToast(2,'O e-mail passado é inválido'),
                 fsa: '',//setErrorToast(3,'O titulo passado é inválido'),
-                desc: '' //setErrorToast(4,'A descrição passada é inválida')
+                desc:'' //setErrorToast(4,'A descrição passada é inválida')
 
             },
             submitHandler: (function (form) {
@@ -97,18 +94,18 @@ $(document).ready(() => {
                 let errors = validate.errorList
                 let er = ''
                 errors.forEach(err => {
-                    if (err.element.name == 'nome') {
+                    if (err.element.name == 'nome'){
                         er += 'Nome, '
-                    } else if (err.element.name == 'email') {
+                    }else if (err.element.name == 'email'){
                         er += 'E-mail, '
-                    } else if (err.element.name == 'fsa') {
+                    }else if (err.element.name == 'fsa'){
                         er += 'Título, '
-                    } else if (err.element.name == 'desc') {
+                    }else if (err.element.name == 'desc'){
                         er += 'Descrição'
                     }
-
+                    
                 });
-                setErrorToast(`Os seguintes campos necessitam de correção: \n <strong> ${er} </strong>`)
+                setErrorToast(`Os seguintes campos necessitam de correção: \n <strong> ${er} </strong>`) 
             })
         })
     })

@@ -1,0 +1,19 @@
+@use './config/reset.scss';
+@use './config/vars.scss';
+@use './header/header.scss';
+@use './section/section.scss';
+@use './media/media.scss';
+
+body {
+    background-color: #f5f6fa;
+}
+
+li {
+    list-style: none;
+}
+
+.container {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}

@@ -1,0 +1,26 @@
+@use './config/reset.scss';
+@use './config/var.scss';
+@use './sections/prod.scss';
+@use 'sass:math';
+
+@function pixelForEm($pixel,$tamanhoPadrao: 16px){
+    @return math.div($pixel,$tamanhoPadrao)+em;
+}
+
+body{
+    background-color: var.$corDeFundo;
+}
+
+header{
+    padding: 16px;
+    text-align: center;
+    font-weight: bold;
+    font-size: pixelForEm(22px);
+    background-color: var.$corPrincipal;
+}
+
+.container{
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
