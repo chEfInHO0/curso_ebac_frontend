@@ -1,0 +1,40 @@
+@use '../config/vars.scss';
+@use 'sass:math';
+
+@function setGrids($numOfGrids, $colGap: 1%) {
+    $width: (math.div(100, $numOfGrids) - $colGap);
+    @return repeat($numOfGrids, $width);
+
+}
+
+@media screen and (max-width: vars.$tablet) {
+    header{
+        padding: 0 20px;
+    }
+
+    .container {
+        max-width: 80%;
+    }
+
+    section {
+        .products {
+            grid-template-columns: setGrids(2, 3%);
+            column-gap: 3%;
+        }
+    }
+}
+
+@media screen and (max-width: vars.$mobile) {
+    header{
+        padding: 0 20px;
+    }
+    section {
+        .products {
+            display: block;
+
+            .product-item {
+                margin-bottom: 32px;
+            }
+        }
+    }
+}

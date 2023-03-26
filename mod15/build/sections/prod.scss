@@ -1,0 +1,70 @@
+@use '../config/var.scss';
+@use 'sass:math';
+
+@mixin formElement() {
+    width: 100%;
+    font-size: 24px;
+    border: none;
+    display: block;
+    margin: 20px 0px;
+    padding: 5px;
+}
+
+@function pixelForEm($pixel,$padrao: 16px){
+    @return math.div($pixel,$padrao)+em;
+}
+
+.form-area {
+    margin: 0 auto;
+    max-width: 780px;
+    background-color: var.$corDeFundo;
+    display: flex;
+    flex-direction: column;
+    height: calc(100vh - 71px);
+    justify-content: center;
+    align-items: center;
+    h2 {
+        font-size: pixelForEm(48px);
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    form {
+        width: 100%;
+        max-width: 480px;
+        margin: 0 auto;
+        input[type=text],input[type=email]{
+            @include formElement();
+            background-color: transparent;
+            border-bottom: 3px solid ;
+            &:focus{
+                outline: none;
+            }
+        }
+        input[type=submit]{
+            @include formElement();
+            transition: .1s all linear;
+            cursor: pointer;
+            background-color: var.$corPrincipal;
+            border-radius: 5px;
+            &:hover{
+                background-color: darken(var.$corPrincipal, 35%);
+                //background-color: lighten(var.$corPrincipal, 35%);
+            }
+        }
+    }
+}
+
+@media screen and (max-width:760px){
+    header{
+        font-size: pixelForEm(36px);
+    }
+    .form-area{
+        max-width: 300px;
+        width: 100%;
+        h2{
+            font-size: pixelForEm(36px);
+        }
+    }
+}
+

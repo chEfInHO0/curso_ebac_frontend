@@ -1,0 +1,87 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+.form-area {
+  margin: 0 auto;
+  max-width: 780px;
+  background-color: #cac;
+  display: flex;
+  flex-direction: column;
+  height: calc(100vh - 71px);
+  justify-content: center;
+  align-items: center;
+}
+.form-area h2 {
+  font-size: 3em;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.form-area form {
+  width: 100%;
+  max-width: 480px;
+  margin: 0 auto;
+}
+.form-area form input[type=text], .form-area form input[type=email] {
+  width: 100%;
+  font-size: 24px;
+  border: none;
+  display: block;
+  margin: 20px 0px;
+  padding: 5px;
+  background-color: transparent;
+  border-bottom: 3px solid;
+}
+.form-area form input[type=text]:focus, .form-area form input[type=email]:focus {
+  outline: none;
+}
+.form-area form input[type=submit] {
+  width: 100%;
+  font-size: 24px;
+  border: none;
+  display: block;
+  margin: 20px 0px;
+  padding: 5px;
+  transition: 0.1s all linear;
+  cursor: pointer;
+  background-color: #fa4080;
+  border-radius: 5px;
+}
+.form-area form input[type=submit]:hover {
+  background-color: #840330;
+}
+
+@media screen and (max-width: 760px) {
+  header {
+    font-size: 2.25em;
+  }
+  .form-area {
+    max-width: 300px;
+    width: 100%;
+  }
+  .form-area h2 {
+    font-size: 2.25em;
+  }
+}
+body {
+  background-color: #cac;
+}
+
+header {
+  padding: 16px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.375em;
+  background-color: #fa4080;
+}
+
+.container {
+  max-width: 1024px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+/*# sourceMappingURL=main.css.map */

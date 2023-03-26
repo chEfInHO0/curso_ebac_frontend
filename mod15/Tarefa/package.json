@@ -1,5 +1,5 @@
 {
-  "name": "mod15",
+  "name": "tarefa",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -11,6 +11,6 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "sass": "^1.59.3"
+    "sass": "^1.60.0"
   }
 }
