@@ -29,5 +29,5 @@ exports.default = gulp.series(primeiraFunc,dizOi) // gulp.parallel(primeiraFunc,
 exports.oi = dizOi
 exports.sass = compileSass
 exports.watch = function () {
-    gulp.watch('./source/styles/*scss',{ignoreInitial:false},gulp.series(compileSass))
+gulp.watch('./source/styles/*.scss',{ignoreInitial:false},gulp.series(compileSass))
 }

@@ -1,0 +1,17 @@
+npm init -y
+
+npm i gulp
+
+npm i gulp-sass
+
+npm i sass
+
+npm i gulp-sourcemaps
+
+npm i gulp-uglify
+
+npm i gulp-obfuscate
+
+npm i gulp-imagemin
+
+

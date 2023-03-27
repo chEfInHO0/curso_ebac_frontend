@@ -1,0 +1,48 @@
+@use 'var.scss';
+@use 'reset';
+
+*{
+    color: var.$fontColor;
+}
+.container{
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header{
+    background-color: var.$secondColor;
+    padding: 20px;
+}
+
+h1{
+    text-align: center;
+}
+
+h2{
+    margin-top: 20px;
+    padding: 16px;
+    color: var.$secondColor;
+    text-align: center;
+    background-color: rgba(255,255,255,0.6);
+    #pressMe{
+        margin-top: 40px;
+        padding: 10px;
+        color:var.$firstColor;
+        font-weight: bold;
+        border-radius: 5px;
+        background-color: lighten(var.$secondColor,25%);
+        transition: .1s all linear;
+        &:hover{
+            background-color: lighten(var.$secondColor,15%);
+        }
+    }
+    #showMe,#msg{
+        display: none;
+        margin-top: 40px;
+    }
+}
+
+body{
+    background-color: var.$firstColor;
+}

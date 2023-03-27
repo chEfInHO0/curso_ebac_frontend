@@ -1,3 +1,4 @@
 *.py
 Plugins/
 node_modules/
+build/
