@@ -1,0 +1,1 @@
+{"version":3,"sources":["main.scss","var.scss"],"names":[],"mappings":"AAEA,KACI,iBCHU","file":"../main.css","sourcesContent":["@use 'var.scss';\r\n\r\nbody{\r\n    background-color: var.$primaryColor;\r\n}","$primaryColor:rgb(29, 154, 192);"]}
