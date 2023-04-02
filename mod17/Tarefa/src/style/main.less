@@ -1,0 +1,154 @@
+@import './config/reset.less';
+@import './config/escape.less';
+@import './config/vars.less';
+
+
+.grid-columns(@r: 1, @w: 1%, @cg: 1%, @rg: 1%) {
+    grid-template-columns: repeat(@r, @w);
+    column-gap: @cg;
+    row-gap: @rg;
+}
+
+body {
+    background-color: @CP;
+}
+
+li {
+    list-style: none;
+}
+
+
+header{
+    @media @max767{
+        .menu{
+            li{
+                a{
+                    font-size: 22px;
+                }
+            }
+        }
+    }
+    @media @max1023{
+        .menu{
+            li{
+                a{
+                    font-size: 32px;
+                }
+            }
+        }
+    }
+}
+
+
+.container {
+    @media @max1023 {
+        .container {
+            max-width: 80%;
+        }
+
+        .products {
+            .grid-columns(2, 48.5%, 1%, 1%);
+        }
+    }
+
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header {
+    background-color: @CS;
+    position: sticky;
+    top: 0;
+    left: 0;
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 16px 0;
+    }
+}
+
+
+
+.menu {
+    display: flex;
+
+    li {
+        font-weight: bold;
+        margin-left: 24px;
+
+        a {
+            color: @W;
+            text-decoration: none;
+        }
+    }
+}
+
+
+
+
+section {
+    @media @max767 {
+        .container {
+            
+            h2{
+                font-size: 32px;
+            }
+            h4,p,a{
+                font-size: 25px;
+            }
+            .products {
+                display: block;
+            }
+
+            .product-item {
+                margin-bottom: 32px;
+            }
+        }
+
+    }
+    @media @max1023 {
+        .container {
+            
+            h2{
+                font-size: 32px;
+            }
+            h4,p,a{
+                font-size: 25px;
+            }
+        }
+
+    }
+
+    padding: 56px 0;
+
+    .products {
+        margin-top: 40px;
+        display: grid;
+        .grid-columns(3, 32.66%, 1%, 4%);
+        width: 100%;
+
+        img {
+            width: 100%;
+            border-radius: 16px;
+        }
+
+        .product-button {
+            display: block;
+            background-color: @CB;
+            color: #fff;
+            text-align: center;
+            padding: 8px 0;
+            border-radius: 8px;
+            margin-top: 8px;
+            text-decoration: none;
+
+            &:hover {
+                background-color: @CBh;
+            }
+        }
+    }
+
+}
