@@ -1,0 +1,25 @@
+npm i -g grunt-cli       *cli = (command line interface)
+
+npm i -D grunt
+
+"grunt":"grunt"
+
+criar arquivo GruntFile.js
+
+
+module.exports = function(grunt){
+    grunt.initConfig({
+        pkg: grunt.file.readJSON('package.json')
+    })
+}
+
+grunt.loadNpmTasks('Nome do pacote a ser configurado vai aqui')
+
+npm i -D grunt-contrib-less
+npm i -D grunt-contrib-sass
+npm i -D grunt-concurrent
+npm i -D grunt-contrib-watch
+npm i -D grunt-replace
+npm - -D grunt-contrib-htmlmin
+npm i -D grunt-contrib-clean
+npm i -D grunt-contrib-uglify

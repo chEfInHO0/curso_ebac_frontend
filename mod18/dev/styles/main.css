@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Roboto, sans-serif;
+}
+body {
+  background-color: #eb3b5a;
+  color: #fff;
+  font-size: 2em;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+h1 {
+  text-align: center;
+  font-family: Lobster, cursive;
+  font-size: 4em;
+}
+label {
+  display: block;
+  font-size: 0.8em;
+}
+.container {
+  max-width: 960px;
+  width: 100%;
+  margin: 0 auto;
+}
+.sort-area {
+  text-align: center;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 600px;
+}
+@media (max-width:767px) {
+  .sort-area {
+    width: 70%;
+  }
+}
+@media (max-width:1023px) {
+  .sort-area {
+    width: 80%;
+  }
+}
+.sort-area input {
+  all: unset;
+  padding: 16px;
+  width: 70%;
+  display: block;
+  margin: 20px auto;
+  background-color: transparent;
+  border: none;
+  border-bottom: 3px solid;
+}
+.sort-area button {
+  padding: 16px;
+  font-weight: bold;
+  font-size: 0.8em;
+  background-color: #d48d3b;
+  border-radius: 10px;
+}
+.max-numb {
+  width: 100%;
+  margin: 20px auto 0;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width:767px) {
+  .max-numb {
+    width: 80%;
+  }
+}
+@media (max-width:1023px) {
+  .max-numb {
+    width: 80%;
+  }
+}
+.max-numb .box {
+  width: 70px;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

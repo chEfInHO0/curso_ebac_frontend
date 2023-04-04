@@ -1,0 +1,26 @@
+{
+  "name": "tarefa",
+  "version": "1.0.0",
+  "description": "",
+  "main": "GruntFile.js",
+  "scripts": {
+    "pkgs": "npm i -D grunt-contrib-less grunt-contrib-sass grunt-concurrent grunt-contrib-watch grunt-replace npm grunt-contrib-htmlmin grunt-contrib-clean grunt-contrib-uglify",
+    "grunt":"grunt",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "-": "^0.0.1",
+    "grunt-concurrent": "^3.0.0",
+    "grunt-contrib-clean": "^2.0.1",
+    "grunt-contrib-htmlmin": "^3.1.0",
+    "grunt-contrib-less": "^3.0.0",
+    "grunt-contrib-sass": "^2.0.0",
+    "grunt-contrib-uglify": "^5.2.2",
+    "grunt-contrib-watch": "^1.1.0",
+    "grunt-replace": "^2.0.2",
+    "npm": "^9.6.3"
+  }
+}
