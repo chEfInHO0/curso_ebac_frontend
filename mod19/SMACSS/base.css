@@ -1,0 +1,11 @@
+/*Neste arquivo vai ficar situado qualquer coisa que seja responsavel por padronizar a estrutura base */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}

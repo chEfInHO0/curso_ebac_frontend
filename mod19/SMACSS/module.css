@@ -1,0 +1,38 @@
+/*Neste arquivo vai ficar situado qualquer classe que possa ser reutilizado em qualquer parte do codigo*/
+
+.title{
+    font-size: 48px;
+}
+
+.subtitle{
+    font-size: 24px;
+}
+
+.message{
+    margin: 10px 0;
+    padding: 8px;
+    border: 1px solid;
+    border-radius: 5px;
+}
+
+.message-header{
+    padding: 8px;
+    font-size: 18px;
+}
+
+.message-content{
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.is-error{
+    background-color: rgb(240, 177, 177);
+    color: red;
+    border: red;
+}
+
+.is-success{
+    background-color: rgb(153, 207, 153);
+    color: green;
+    border: green;
+}
